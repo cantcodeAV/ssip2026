@@ -1,0 +1,2125 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Leaders Foundation | Quality Education, Hunger Relief & Clean-Up Drives</title>
+  <meta name="description" content="Green Leaders Foundation is an 80G tax-exempt NGO empowering underprivileged children through quality education, eradicating hunger with daily hot meals, and leading environmental clean-up drives across India.">
+  <meta name="keywords" content="Green Leaders Foundation, NGO India, child education, hunger relief, food drive, beach cleanup, tree plantation, 80G tax exemption, volunteer">
+
+  <!-- Favicon icon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              200: '#a7f3d0',
+              300: '#6ee7b7',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
+              950: '#022c22',
+            },
+            accent: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              300: '#fcd34d',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+            },
+            warm: {
+              500: '#f97316',
+              600: '#ea580c',
+              700: '#c2410c',
+            },
+            slateDark: {
+              800: '#1e293b',
+              900: '#0f172a',
+              950: '#020617',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans selection:bg-brand-500 selection:text-white">
+
+  <!-- TOP EMERGENCY DRIVE RIBBON -->
+  <aside aria-label="Urgent relief announcement" class="bg-slateDark-900 text-white text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div class="flex items-center gap-2 text-center sm:text-left">
+        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 font-semibold border border-emerald-500/30 text-xs">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-dot"></span>
+          URGENT RELIEF
+        </span>
+        <span class="text-slate-300">
+          Winter Ration & Study Kit Drive in 14 Slum Hubs — <strong class="text-amber-400">82% Goal Met</strong>.
+        </span>
+        <button onclick="openDonationModalWithAmount(1500, 'Education & Food Winter Kits')" class="text-amber-400 hover:text-amber-300 font-semibold underline underline-offset-2 transition-colors ml-1 inline-flex items-center gap-1">
+          Sponsor a Kit (₹1,500) <i class="fa-solid fa-arrow-right text-xs"></i>
+        </button>
+      </div>
+      <div class="hidden md:flex items-center gap-4 text-xs text-slate-400">
+        <span class="inline-flex items-center gap-1.5"><i class="fa-solid fa-phone text-emerald-400"></i> +91 98200 12345</span>
+        <span class="inline-flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-emerald-400"></i> 80G Tax Exemption: Reg. #AAATG1234F</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- NAVIGATION BAR (STICKY) -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm transition-all duration-300" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo -->
+        <a href="#hero" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-brand-500 rounded-lg p-1">
+          <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-brand-800 via-brand-600 to-brand-400 flex items-center justify-center text-white shadow-md shadow-brand-600/30 group-hover:scale-105 transition-transform duration-300">
+            <i class="fa-solid fa-leaf text-xl text-white"></i>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-xl font-extrabold tracking-tight text-slateDark-900 group-hover:text-brand-700 transition-colors">
+              Green Leaders
+            </span>
+            <span class="text-[10px] uppercase font-bold tracking-widest text-accent-600">
+              Foundation • 80G NGO
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-600" aria-label="Main Navigation">
+          <a href="#about" class="hover:text-brand-600 transition-colors py-1">About Us</a>
+          <a href="#pillars" class="hover:text-brand-600 transition-colors py-1">Core Pillars</a>
+          <a href="#initiatives" class="hover:text-brand-600 transition-colors py-1">Initiatives</a>
+          <a href="#impact" class="hover:text-brand-600 transition-colors py-1">Impact & Calculator</a>
+          <a href="#drives" class="hover:text-brand-600 transition-colors py-1">Upcoming Drives</a>
+          <a href="#transparency" class="hover:text-brand-600 transition-colors py-1">Financials</a>
+          <a href="#contact" class="hover:text-brand-600 transition-colors py-1">Contact</a>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="hidden sm:flex items-center gap-3">
+          <button onclick="openVolunteerModal()" class="px-4 py-2.5 rounded-xl border border-brand-200 text-brand-800 hover:bg-brand-50 hover:border-brand-400 font-semibold text-sm transition-all duration-200 inline-flex items-center gap-2">
+            <i class="fa-solid fa-hand-holding-heart text-brand-600"></i>
+            <span>Volunteer</span>
+          </button>
+          <button onclick="openDonationModal()" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-accent-500 via-warm-500 to-warm-600 text-white font-bold text-sm shadow-md glow-amber hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-200 inline-flex items-center gap-2" id="headerDonateBtn">
+            <i class="fa-solid fa-heart text-white animate-pulse"></i>
+            <span>Donate Now</span>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuBtn" aria-label="Toggle Navigation Menu" class="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-brand-500 transition-colors">
+          <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-3 shadow-xl animate-fadeIn">
+      <nav class="flex flex-col space-y-2 text-base font-medium text-slate-700">
+        <a href="#about" class="px-3 py-2 rounded-lg hover:bg-brand-50 hover:text-brand-700 mobile-nav-link">About Us</a>
+        <a href="#pillars" class="px-3 py-2 rounded-lg hover:bg-brand-50 hover:text-brand-700 mobile-nav-link">Core Pillars</a>
+        <a href="#initiatives" class="px-3 py-2 rounded-lg hover:bg-brand-50 hover:text-brand-700 mobile-nav-link">Key Initiatives</a>
+        <a href="#impact" class="px-3 py-2 rounded-lg hover:bg-brand-50 hover:text-brand-700 mobile-nav-link">Impact & Calculator</a>
+        <a href="#drives" class="px-3 py-2 rounded-lg hover:bg-brand-50 hover:text-brand-700 mobile-nav-link">Upcoming Drives</a>
+        <a href="#transparency" class="px-3 py-2 rounded-lg hover:bg-brand-50 hover:text-brand-700 mobile-nav-link">Financial Transparency</a>
+        <a href="#testimonials" class="px-3 py-2 rounded-lg hover:bg-brand-50 hover:text-brand-700 mobile-nav-link">Community Stories</a>
+        <a href="#contact" class="px-3 py-2 rounded-lg hover:bg-brand-50 hover:text-brand-700 mobile-nav-link">Contact</a>
+      </nav>
+      <div class="pt-3 border-t border-slate-100 flex flex-col gap-2">
+        <button onclick="openVolunteerModal(); toggleMobileMenu();" class="w-full py-3 rounded-xl border border-brand-300 text-brand-800 font-semibold text-center hover:bg-brand-50">
+          <i class="fa-solid fa-hand-holding-heart mr-2 text-brand-600"></i> Volunteer with Us
+        </button>
+        <button onclick="openDonationModal(); toggleMobileMenu();" class="w-full py-3 rounded-xl bg-gradient-to-r from-accent-500 to-warm-600 text-white font-bold text-center shadow-md">
+          <i class="fa-solid fa-heart mr-2"></i> Donate Now (80G Tax Exemption)
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="relative overflow-hidden pt-10 pb-20 lg:pt-16 lg:pb-28 bg-gradient-to-b from-brand-50/60 via-white to-slate-50">
+    <!-- Ambient decorative blobs -->
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-brand-200/40 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/2 -left-32 w-80 h-80 bg-accent-200/30 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Hero Text Content -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <!-- Live Impact Pill Badge -->
+          <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white shadow-sm border border-brand-200 text-slateDark-900 text-xs sm:text-sm font-semibold animate-float-slow">
+            <span class="w-2.5 h-2.5 rounded-full bg-brand-500 pulse-dot"></span>
+            <span class="text-brand-800">52,400+ Lives Touched Across 14 Cities</span>
+            <span class="text-slate-300">|</span>
+            <span class="text-amber-600 font-bold"><i class="fa-solid fa-certificate mr-1"></i>80G Certified</span>
+          </div>
+
+          <!-- Main Punchy Headline -->
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slateDark-900 leading-[1.15]">
+            Educate a Child. <br>
+            <span class="bg-gradient-to-r from-brand-700 via-brand-600 to-emerald-500 bg-clip-text text-transparent">Feed a Family.</span> <br>
+            <span class="relative inline-block">
+              Restore Our Planet.
+              <svg class="absolute -bottom-2 left-0 w-full h-3 text-accent-400" viewBox="0 0 200 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 9C50 2 150 2 197 9" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </h1>
+
+          <!-- Subheadline -->
+          <p class="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            Green Leaders Foundation bridges grassroots action across India: equipping slum children with transformative learning kits, rescuing nutritious food for daily hot meals, and mobilizing thousands for coastal and urban clean-up drives.
+          </p>
+
+          <!-- Dual Primary CTAs -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <button onclick="openDonationModal()" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-accent-500 via-warm-500 to-warm-600 text-white font-bold text-base shadow-lg glow-amber hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-200 inline-flex items-center justify-center gap-3">
+              <i class="fa-solid fa-heart text-white text-lg"></i>
+              <span>Support Our Mission</span>
+            </button>
+            <a href="#drives" class="w-full sm:w-auto px-7 py-4 rounded-xl bg-white border-2 border-brand-600 text-brand-700 hover:bg-brand-50 font-bold text-base shadow-sm hover:shadow transition-all duration-200 inline-flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calendar-check text-brand-600"></i>
+              <span>Join a Drive</span>
+            </a>
+          </div>
+
+          <!-- Trust Sub-metrics -->
+          <div class="pt-6 border-t border-slate-200/80 grid grid-cols-3 gap-4 text-center lg:text-left">
+            <div>
+              <div class="text-2xl font-extrabold text-slateDark-900">100%</div>
+              <div class="text-xs text-slate-500 font-medium mt-0.5">Transparent & Audited</div>
+            </div>
+            <div>
+              <div class="text-2xl font-extrabold text-slateDark-900">50%</div>
+              <div class="text-xs text-slate-500 font-medium mt-0.5">80G Tax Savings</div>
+            </div>
+            <div>
+              <div class="text-2xl font-extrabold text-brand-600">84%</div>
+              <div class="text-xs text-slate-500 font-medium mt-0.5">Direct Field Programs</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase (Composite High-res Media Grid with Floating Badges) -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            
+            <!-- Main Featured Image -->
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] group">
+              <img 
+                src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=900&q=80" 
+                alt="Children smiling happily with learning kits provided by Green Leaders Foundation" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                loading="eager"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-slateDark-900/80 via-transparent to-transparent"></div>
+              
+              <div class="absolute bottom-5 left-5 right-5 text-white">
+                <span class="inline-block px-2.5 py-1 rounded-md bg-brand-600/90 text-[11px] font-bold uppercase tracking-wider mb-1">
+                  Slum Learning Hub #14
+                </span>
+                <p class="text-sm font-semibold text-slate-100">
+                  "Every child deserves books, nutritious food, and clean soil to play on."
+                </p>
+              </div>
+            </div>
+
+            <!-- Floating Glassmorphism Badge 1 (Hot Meals Served) -->
+            <div class="absolute -top-6 -left-6 sm:-left-8 glass-panel p-3.5 rounded-2xl shadow-xl flex items-center gap-3 border border-white/80 animate-float-slow max-w-[210px]">
+              <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center text-lg font-bold">
+                <i class="fa-solid fa-bowl-rice"></i>
+              </div>
+              <div>
+                <div class="text-sm font-extrabold text-slateDark-900 leading-tight">420,000+</div>
+                <div class="text-[11px] text-slate-500 font-medium">Hot Meals Served</div>
+              </div>
+            </div>
+
+            <!-- Floating Glassmorphism Badge 2 (Waste Cleared) -->
+            <div class="absolute -bottom-6 -right-4 sm:-right-6 glass-panel p-3.5 rounded-2xl shadow-xl flex items-center gap-3 border border-white/80 animate-float-reverse max-w-[220px]">
+              <div class="w-10 h-10 rounded-xl bg-brand-500/10 text-brand-600 flex items-center justify-center text-lg font-bold">
+                <i class="fa-solid fa-recycle"></i>
+              </div>
+              <div>
+                <div class="text-sm font-extrabold text-slateDark-900 leading-tight">125+ Tons</div>
+                <div class="text-[11px] text-slate-500 font-medium">Ocean Waste Cleared</div>
+              </div>
+            </div>
+
+            <!-- Floating Badge 3 (Volunteers) -->
+            <div class="absolute top-1/2 -right-6 hidden sm:flex glass-panel px-3.5 py-2.5 rounded-xl shadow-lg items-center gap-2 border border-white/80 animate-float-slow">
+              <div class="flex -space-x-2">
+                <img class="inline-block h-7 w-7 rounded-full ring-2 ring-white object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Volunteer avatar">
+                <img class="inline-block h-7 w-7 rounded-full ring-2 ring-white object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Volunteer avatar">
+                <img class="inline-block h-7 w-7 rounded-full ring-2 ring-white object-cover" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=120&q=80" alt="Volunteer avatar">
+              </div>
+              <span class="text-xs font-bold text-slate-800">3,400+ Active Youth</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT & 3 CORE PILLARS SECTION -->
+  <section id="pillars" class="py-20 bg-white border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block px-3 py-1 rounded-full bg-brand-100 text-brand-800 text-xs font-bold uppercase tracking-wider mb-3">
+          Our Three Pillars of Change
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slateDark-900 tracking-tight">
+          Grassroots Action. Lasting Human Dignity.
+        </h2>
+        <p class="text-slate-600 mt-4 text-base sm:text-lg">
+          We believe true social progress happens at the intersection of education, fundamental sustenance, and clean community ecosystems.
+        </p>
+      </div>
+
+      <!-- 3 Pillar Cards -->
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- Pillar 1: Education -->
+        <div class="rounded-3xl bg-slate-50 border border-slate-200/80 p-8 hover:shadow-xl hover:border-brand-300 transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-16 h-16 rounded-2xl bg-brand-100 text-brand-700 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-brand-600 group-hover:text-white transition-all duration-300 shadow-sm">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Pillar 01</span>
+              <span class="text-slate-300">•</span>
+              <span class="text-xs font-semibold text-slate-500">4,850+ Children</span>
+            </div>
+            <h3 class="text-2xl font-bold text-slateDark-900 mb-3 group-hover:text-brand-700 transition-colors">
+              Quality Education for All
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Empowering first-generation learners from underserved communities with STEM learning kits, daily after-school academic mentorship, and community digital literacy centers.
+            </p>
+            <ul class="space-y-2.5 text-xs text-slate-600 font-medium mb-6">
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-brand-500"></i> Annual Learning Kits & School Bags
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-brand-500"></i> 1-on-1 Youth Mentorship & Homework Help
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-brand-500"></i> Digital Tablets & Coding for Girls
+              </li>
+            </ul>
+          </div>
+          <button onclick="filterInitiatives('education')" class="text-brand-700 hover:text-brand-800 font-bold text-sm inline-flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+            <span>Explore Education Drives</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </button>
+        </div>
+
+        <!-- Pillar 2: Hunger Relief -->
+        <div class="rounded-3xl bg-slate-50 border border-slate-200/80 p-8 hover:shadow-xl hover:border-amber-300 transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-16 h-16 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300 shadow-sm">
+              <i class="fa-solid fa-bowl-rice"></i>
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-600">Pillar 02</span>
+              <span class="text-slate-300">•</span>
+              <span class="text-xs font-semibold text-slate-500">Daily Slum Kitchens</span>
+            </div>
+            <h3 class="text-2xl font-bold text-slateDark-900 mb-3 group-hover:text-amber-700 transition-colors">
+              Hunger Relief & Food Drives
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Eradicating hunger so that no child studies on an empty stomach. We operate community kitchens serving wholesome freshly cooked meals and rescue excess surplus food.
+            </p>
+            <ul class="space-y-2.5 text-xs text-slate-600 font-medium mb-6">
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-amber-500"></i> Daily Hot Nutritious Lunch & Protein Kits
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-amber-500"></i> Slum Community Grain & Ration Pantries
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-amber-500"></i> Banquet & Hotel Surplus Food Rescue
+              </li>
+            </ul>
+          </div>
+          <button onclick="filterInitiatives('food')" class="text-amber-700 hover:text-amber-800 font-bold text-sm inline-flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+            <span>Explore Food Drives</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </button>
+        </div>
+
+        <!-- Pillar 3: Environmental Clean-up -->
+        <div class="rounded-3xl bg-slate-50 border border-slate-200/80 p-8 hover:shadow-xl hover:border-emerald-300 transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-16 h-16 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
+              <i class="fa-solid fa-mountain-sun"></i>
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-bold uppercase tracking-wider text-emerald-600">Pillar 03</span>
+              <span class="text-slate-300">•</span>
+              <span class="text-xs font-semibold text-slate-500">125+ Tons Cleared</span>
+            </div>
+            <h3 class="text-2xl font-bold text-slateDark-900 mb-3 group-hover:text-emerald-700 transition-colors">
+              Clean-Up & Ecological Care
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Restoring delicate shorelines, planting dense indigenous Miyawaki urban micro-forests, and educating youth on waste segregation and recycling stewardship.
+            </p>
+            <ul class="space-y-2.5 text-xs text-slate-600 font-medium mb-6">
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-emerald-500"></i> Weekend Coastal Beach & River Cleanups
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-emerald-500"></i> Miyawaki Native Forest Tree Plantations
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-emerald-500"></i> Zero-Waste Slum Segregation Stations
+              </li>
+            </ul>
+          </div>
+          <button onclick="filterInitiatives('cleanup')" class="text-emerald-700 hover:text-emerald-800 font-bold text-sm inline-flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+            <span>Explore Eco Clean-ups</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- KEY INITIATIVES SECTION (INTERACTIVE FILTERABLE GRID) -->
+  <section id="initiatives" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Title & Tabs -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div>
+          <span class="inline-block px-3 py-1 rounded-full bg-brand-100 text-brand-800 text-xs font-bold uppercase tracking-wider mb-2">
+            Active Campaigns
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slateDark-900 tracking-tight">
+            Key Initiatives & Ongoing Drives
+          </h2>
+          <p class="text-slate-600 mt-2 text-base">
+            Choose an initiative to support directly or RSVP to volunteer on the ground.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="flex flex-wrap items-center gap-2 p-1.5 bg-white rounded-2xl border border-slate-200 shadow-sm" id="initiativeFilterTabs">
+          <button onclick="filterInitiatives('all')" data-filter="all" class="filter-tab-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-brand-600 text-white shadow-sm transition-all duration-200">
+            All Drives
+          </button>
+          <button onclick="filterInitiatives('education')" data-filter="education" class="filter-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-brand-700 hover:bg-slate-100 transition-all duration-200">
+            <i class="fa-solid fa-book-open mr-1.5"></i> Education
+          </button>
+          <button onclick="filterInitiatives('food')" data-filter="food" class="filter-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-amber-700 hover:bg-slate-100 transition-all duration-200">
+            <i class="fa-solid fa-utensils mr-1.5"></i> Food Drives
+          </button>
+          <button onclick="filterInitiatives('cleanup')" data-filter="cleanup" class="filter-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-emerald-700 hover:bg-slate-100 transition-all duration-200">
+            <i class="fa-solid fa-tree mr-1.5"></i> Clean-Up
+          </button>
+        </div>
+      </div>
+
+      <!-- Initiatives Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8" id="initiativesGrid">
+        
+        <!-- Initiative Card 1 (Education) -->
+        <article class="initiative-card rounded-3xl bg-white border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="education">
+          <div class="relative aspect-video overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80" alt="Project Vidya: Digital Literacy & School Kits" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy">
+            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-brand-600/90 backdrop-blur-sm text-white text-xs font-bold uppercase tracking-wider">
+              Education
+            </span>
+            <span class="absolute top-4 right-4 px-2.5 py-1 rounded-full bg-slateDark-900/80 backdrop-blur-sm text-white text-xs font-medium">
+              <i class="fa-solid fa-location-dot text-brand-400 mr-1"></i> Mumbai & Pune
+            </span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-slateDark-900 mb-2">Project Vidya: Digital Literacy on Wheels</h3>
+              <p class="text-slate-600 text-sm line-clamp-2 mb-4">
+                Deploying mobile tablet labs and curriculum kits to 14 slum settlements, bridging the digital divide for 1,200 kids.
+              </p>
+              
+              <!-- Progress Indicator -->
+              <div class="space-y-1.5 mb-4">
+                <div class="flex justify-between text-xs font-semibold">
+                  <span class="text-slate-700">₹4,20,000 Raised</span>
+                  <span class="text-brand-700">84% of ₹5,00,000</span>
+                </div>
+                <div class="w-full h-2 rounded-full bg-slate-100 overflow-hidden">
+                  <div class="h-full bg-brand-600 rounded-full" style="width: 84%"></div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-4 text-xs text-slate-500 pb-4 border-b border-slate-100">
+                <span><i class="fa-solid fa-users text-brand-600 mr-1"></i> 850 Kids Reached</span>
+                <span><i class="fa-solid fa-calendar-day text-brand-600 mr-1"></i> Ongoing Drive</span>
+              </div>
+            </div>
+
+            <div class="pt-4 flex items-center gap-3">
+              <button onclick="openDonationModalWithAmount(2500, 'Project Vidya: Digital Literacy')" class="flex-1 py-2.5 px-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs sm:text-sm text-center shadow-sm transition-colors">
+                Donate Now
+              </button>
+              <button onclick="openInitiativeDetails('vidya')" class="py-2.5 px-3 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-700 font-semibold text-xs sm:text-sm transition-colors">
+                Details & RSVP
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Initiative Card 2 (Food Drives) -->
+        <article class="initiative-card rounded-3xl bg-white border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="food">
+          <div class="relative aspect-video overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=800&q=80" alt="Annapurna Slum Meals Kitchen" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy">
+            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-amber-500/90 backdrop-blur-sm text-white text-xs font-bold uppercase tracking-wider">
+              Food Relief
+            </span>
+            <span class="absolute top-4 right-4 px-2.5 py-1 rounded-full bg-slateDark-900/80 backdrop-blur-sm text-white text-xs font-medium">
+              <i class="fa-solid fa-fire text-amber-400 mr-1"></i> Daily Kitchen
+            </span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-slateDark-900 mb-2">Annapurna Kitchen: Daily Nutritious Meals</h3>
+              <p class="text-slate-600 text-sm line-clamp-2 mb-4">
+                Cooking and serving over 1,000 warm, protein-packed meals daily to malnourished children and daily wage families.
+              </p>
+
+              <!-- Progress Indicator -->
+              <div class="space-y-1.5 mb-4">
+                <div class="flex justify-between text-xs font-semibold">
+                  <span class="text-slate-700">₹7,80,000 Raised</span>
+                  <span class="text-amber-600">91% of ₹8,50,000</span>
+                </div>
+                <div class="w-full h-2 rounded-full bg-slate-100 overflow-hidden">
+                  <div class="h-full bg-amber-500 rounded-full" style="width: 91%"></div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-4 text-xs text-slate-500 pb-4 border-b border-slate-100">
+                <span><i class="fa-solid fa-bowl-food text-amber-500 mr-1"></i> 420K+ Meals Served</span>
+                <span><i class="fa-solid fa-clock text-amber-500 mr-1"></i> 365 Days</span>
+              </div>
+            </div>
+
+            <div class="pt-4 flex items-center gap-3">
+              <button onclick="openDonationModalWithAmount(1500, 'Annapurna Kitchen Hot Meals')" class="flex-1 py-2.5 px-3 rounded-xl bg-amber-500 hover:bg-amber-600 text-white font-bold text-xs sm:text-sm text-center shadow-sm transition-colors">
+                Feed a Child (₹1,500)
+              </button>
+              <button onclick="openInitiativeDetails('annapurna')" class="py-2.5 px-3 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-700 font-semibold text-xs sm:text-sm transition-colors">
+                Details & RSVP
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Initiative Card 3 (Clean-Up Drives) -->
+        <article class="initiative-card rounded-3xl bg-white border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="cleanup">
+          <div class="relative aspect-video overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1618477461853-cf6ed80faba5?auto=format&fit=crop&w=800&q=80" alt="Mission Clean Coast Beach Cleanup" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy">
+            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-emerald-600/90 backdrop-blur-sm text-white text-xs font-bold uppercase tracking-wider">
+              Clean-Up
+            </span>
+            <span class="absolute top-4 right-4 px-2.5 py-1 rounded-full bg-slateDark-900/80 backdrop-blur-sm text-white text-xs font-medium">
+              <i class="fa-solid fa-water text-emerald-300 mr-1"></i> Versova & Dadar
+            </span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-slateDark-900 mb-2">Mission Clean Coast: Ocean Plastic Rescue</h3>
+              <p class="text-slate-600 text-sm line-clamp-2 mb-4">
+                Weekly community beach cleanups and mangrove plastic interception drives removing toxic non-biodegradable waste.
+              </p>
+
+              <!-- Progress Indicator -->
+              <div class="space-y-1.5 mb-4">
+                <div class="flex justify-between text-xs font-semibold">
+                  <span class="text-slate-700">₹3,10,000 Raised</span>
+                  <span class="text-emerald-700">77% of ₹4,00,000</span>
+                </div>
+                <div class="w-full h-2 rounded-full bg-slate-100 overflow-hidden">
+                  <div class="h-full bg-emerald-600 rounded-full" style="width: 77%"></div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-4 text-xs text-slate-500 pb-4 border-b border-slate-100">
+                <span><i class="fa-solid fa-dumpster text-emerald-600 mr-1"></i> 125 Tons Cleared</span>
+                <span><i class="fa-solid fa-user-group text-emerald-600 mr-1"></i> 1,800 Volunteers</span>
+              </div>
+            </div>
+
+            <div class="pt-4 flex items-center gap-3">
+              <button onclick="openDonationModalWithAmount(1000, 'Mission Clean Coast')" class="flex-1 py-2.5 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm text-center shadow-sm transition-colors">
+                Support Drive
+              </button>
+              <button onclick="openInitiativeDetails('coastal')" class="py-2.5 px-3 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-700 font-semibold text-xs sm:text-sm transition-colors">
+                Details & RSVP
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Initiative Card 4 (Education) -->
+        <article class="initiative-card rounded-3xl bg-white border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="education">
+          <div class="relative aspect-video overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80" alt="Shiksha Sahay Girls Mentorship" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy">
+            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-brand-600/90 backdrop-blur-sm text-white text-xs font-bold uppercase tracking-wider">
+              Education
+            </span>
+            <span class="absolute top-4 right-4 px-2.5 py-1 rounded-full bg-slateDark-900/80 backdrop-blur-sm text-white text-xs font-medium">
+              <i class="fa-solid fa-venus text-pink-400 mr-1"></i> Girls Mentorship
+            </span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-slateDark-900 mb-2">Shiksha Sahay: After-School Mentorship</h3>
+              <p class="text-slate-600 text-sm line-clamp-2 mb-4">
+                Dedicated volunteer tutors helping 300+ adolescent girls stay in school through high school board exams and STEM skills.
+              </p>
+
+              <!-- Progress Indicator -->
+              <div class="space-y-1.5 mb-4">
+                <div class="flex justify-between text-xs font-semibold">
+                  <span class="text-slate-700">₹2,60,000 Raised</span>
+                  <span class="text-brand-700">86% of ₹3,00,000</span>
+                </div>
+                <div class="w-full h-2 rounded-full bg-slate-100 overflow-hidden">
+                  <div class="h-full bg-brand-600 rounded-full" style="width: 86%"></div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-4 text-xs text-slate-500 pb-4 border-b border-slate-100">
+                <span><i class="fa-solid fa-graduation-cap text-brand-600 mr-1"></i> 98% Pass Rate</span>
+                <span><i class="fa-solid fa-chalkboard-user text-brand-600 mr-1"></i> 40 Mentors</span>
+              </div>
+            </div>
+
+            <div class="pt-4 flex items-center gap-3">
+              <button onclick="openDonationModalWithAmount(3000, 'Shiksha Sahay Girls Mentorship')" class="flex-1 py-2.5 px-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs sm:text-sm text-center shadow-sm transition-colors">
+                Sponsor a Girl
+              </button>
+              <button onclick="openInitiativeDetails('shiksha')" class="py-2.5 px-3 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-700 font-semibold text-xs sm:text-sm transition-colors">
+                Details & RSVP
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Initiative Card 5 (Food Drives) -->
+        <article class="initiative-card rounded-3xl bg-white border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="food">
+          <div class="relative aspect-video overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80" alt="Surplus Food Rescue & Community Pantries" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy">
+            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-amber-500/90 backdrop-blur-sm text-white text-xs font-bold uppercase tracking-wider">
+              Food Relief
+            </span>
+            <span class="absolute top-4 right-4 px-2.5 py-1 rounded-full bg-slateDark-900/80 backdrop-blur-sm text-white text-xs font-medium">
+              <i class="fa-solid fa-hand-holding-dollar text-amber-300 mr-1"></i> Zero Waste
+            </span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-slateDark-900 mb-2">Surplus Food Rescue Network</h3>
+              <p class="text-slate-600 text-sm line-clamp-2 mb-4">
+                Partnering with wedding banquets and corporate cafeterias to rescue untouched quality food, redistributing 500+ meals nightly.
+              </p>
+
+              <!-- Progress Indicator -->
+              <div class="space-y-1.5 mb-4">
+                <div class="flex justify-between text-xs font-semibold">
+                  <span class="text-slate-700">₹1,90,000 Raised</span>
+                  <span class="text-amber-600">76% of ₹2,50,000</span>
+                </div>
+                <div class="w-full h-2 rounded-full bg-slate-100 overflow-hidden">
+                  <div class="h-full bg-amber-500 rounded-full" style="width: 76%"></div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-4 text-xs text-slate-500 pb-4 border-b border-slate-100">
+                <span><i class="fa-solid fa-truck text-amber-500 mr-1"></i> 3 Food Vans</span>
+                <span><i class="fa-solid fa-building text-amber-500 mr-1"></i> 45 Food Donors</span>
+              </div>
+            </div>
+
+            <div class="pt-4 flex items-center gap-3">
+              <button onclick="openDonationModalWithAmount(1500, 'Surplus Food Rescue')" class="flex-1 py-2.5 px-3 rounded-xl bg-amber-500 hover:bg-amber-600 text-white font-bold text-xs sm:text-sm text-center shadow-sm transition-colors">
+                Support Fleet
+              </button>
+              <button onclick="openInitiativeDetails('rescue')" class="py-2.5 px-3 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-700 font-semibold text-xs sm:text-sm transition-colors">
+                Details & RSVP
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Initiative Card 6 (Clean-Up Drives) -->
+        <article class="initiative-card rounded-3xl bg-white border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="cleanup">
+          <div class="relative aspect-video overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80" alt="Green Canopy Urban Micro-Forest" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy">
+            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-emerald-600/90 backdrop-blur-sm text-white text-xs font-bold uppercase tracking-wider">
+              Clean-Up & Ecology
+            </span>
+            <span class="absolute top-4 right-4 px-2.5 py-1 rounded-full bg-slateDark-900/80 backdrop-blur-sm text-white text-xs font-medium">
+              <i class="fa-solid fa-seedling text-emerald-300 mr-1"></i> Afforestation
+            </span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-slateDark-900 mb-2">Green Canopy: 25,000 Tree Forest</h3>
+              <p class="text-slate-600 text-sm line-clamp-2 mb-4">
+                Creating hyper-dense native Miyawaki micro-forests in industrial belts, fighting urban heat islands and cleaning air.
+              </p>
+
+              <!-- Progress Indicator -->
+              <div class="space-y-1.5 mb-4">
+                <div class="flex justify-between text-xs font-semibold">
+                  <span class="text-slate-700">₹4,80,000 Raised</span>
+                  <span class="text-emerald-700">80% of ₹6,00,000</span>
+                </div>
+                <div class="w-full h-2 rounded-full bg-slate-100 overflow-hidden">
+                  <div class="h-full bg-emerald-600 rounded-full" style="width: 80%"></div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-4 text-xs text-slate-500 pb-4 border-b border-slate-100">
+                <span><i class="fa-solid fa-tree text-emerald-600 mr-1"></i> 18,500 Thriving</span>
+                <span><i class="fa-solid fa-globe text-emerald-600 mr-1"></i> 95% Survival Rate</span>
+              </div>
+            </div>
+
+            <div class="pt-4 flex items-center gap-3">
+              <button onclick="openDonationModalWithAmount(2000, 'Green Canopy Urban Forest')" class="flex-1 py-2.5 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm text-center shadow-sm transition-colors">
+                Plant Trees (₹2,000)
+              </button>
+              <button onclick="openInitiativeDetails('canopy')" class="py-2.5 px-3 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-700 font-semibold text-xs sm:text-sm transition-colors">
+                Details & RSVP
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE IMPACT CALCULATOR & LIVE SCROLL COUNTERS -->
+  <section id="impact" class="py-20 bg-slateDark-900 text-white relative overflow-hidden">
+    <!-- Subtle glow backgrounds -->
+    <div class="absolute -top-40 right-0 w-[500px] h-[500px] bg-brand-600/15 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute -bottom-40 left-0 w-[500px] h-[500px] bg-accent-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Live Counter Metrics Grid -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-xs font-bold uppercase tracking-wider mb-3">
+          Verifiable Real-World Metrics
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
+          Our Collective Impact in Numbers
+        </h2>
+        <p class="text-slate-400 mt-3 text-base">
+          Every rupee donated translates directly into ground equipment, warm food, books, and environmental restoration.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-20">
+        
+        <!-- Counter 1: Meals -->
+        <div class="glass-panel-dark rounded-3xl p-6 sm:p-8 text-center border border-slate-700/60 hover:border-amber-400/50 transition-colors">
+          <div class="w-12 h-12 mx-auto rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-bowl-rice"></i>
+          </div>
+          <div class="text-3xl sm:text-4xl lg:text-5xl font-black text-amber-400 tracking-tight counter-val" data-target="420000">
+            0
+          </div>
+          <div class="text-sm font-semibold text-slate-200 mt-2">Nutritious Meals Served</div>
+          <div class="text-xs text-slate-400 mt-1">Across 18 slum clusters</div>
+        </div>
+
+        <!-- Counter 2: Kids Enrolled -->
+        <div class="glass-panel-dark rounded-3xl p-6 sm:p-8 text-center border border-slate-700/60 hover:border-brand-400/50 transition-colors">
+          <div class="w-12 h-12 mx-auto rounded-2xl bg-brand-500/20 text-brand-400 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="text-3xl sm:text-4xl lg:text-5xl font-black text-brand-400 tracking-tight counter-val" data-target="4850">
+            0
+          </div>
+          <div class="text-sm font-semibold text-slate-200 mt-2">Children Mentored</div>
+          <div class="text-xs text-slate-400 mt-1">Full kits & digital classes</div>
+        </div>
+
+        <!-- Counter 3: Waste Cleared -->
+        <div class="glass-panel-dark rounded-3xl p-6 sm:p-8 text-center border border-slate-700/60 hover:border-emerald-400/50 transition-colors">
+          <div class="w-12 h-12 mx-auto rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-recycle"></i>
+          </div>
+          <div class="text-3xl sm:text-4xl lg:text-5xl font-black text-emerald-400 tracking-tight counter-val" data-target="125">
+            0
+          </div>
+          <div class="text-sm font-semibold text-slate-200 mt-2">Tons Waste Recycled</div>
+          <div class="text-xs text-slate-400 mt-1">Coastal & river channels</div>
+        </div>
+
+        <!-- Counter 4: Volunteers -->
+        <div class="glass-panel-dark rounded-3xl p-6 sm:p-8 text-center border border-slate-700/60 hover:border-blue-400/50 transition-colors">
+          <div class="w-12 h-12 mx-auto rounded-2xl bg-blue-500/20 text-blue-400 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-handshake-angle"></i>
+          </div>
+          <div class="text-3xl sm:text-4xl lg:text-5xl font-black text-blue-400 tracking-tight counter-val" data-target="3400">
+            0
+          </div>
+          <div class="text-sm font-semibold text-slate-200 mt-2">Active Volunteers</div>
+          <div class="text-xs text-slate-400 mt-1">Registered changemakers</div>
+        </div>
+
+      </div>
+
+      <!-- INTERACTIVE IMPACT CALCULATOR -->
+      <div class="rounded-3xl bg-slate-800/90 border border-slate-700 p-6 sm:p-10 lg:p-12 shadow-2xl">
+        <div class="grid lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Slider & Amount Controls -->
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-bold uppercase tracking-wider">
+              <i class="fa-solid fa-calculator mr-1"></i> Interactive Impact Calculator
+            </div>
+            
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-white">
+              See What Your Contribution Achieves
+            </h3>
+            
+            <p class="text-slate-300 text-sm sm:text-base">
+              Slide or choose a preset amount to see the tangible, verifiable difference your donation makes for children, families, and nature.
+            </p>
+
+            <!-- Quick Preset Chips -->
+            <div class="space-y-2">
+              <label class="text-xs font-semibold uppercase text-slate-400 tracking-wider">Choose a donation tier:</label>
+              <div class="grid grid-cols-4 gap-2.5 sm:gap-3" id="calcPresetGroup">
+                <button type="button" onclick="setCalculatorAmount(500)" class="calc-preset-btn py-2.5 px-2 rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 font-bold text-sm text-slate-200 transition-all text-center">
+                  ₹500
+                </button>
+                <button type="button" onclick="setCalculatorAmount(1500)" class="calc-preset-btn active py-2.5 px-2 rounded-xl border-2 border-amber-500 bg-amber-500/20 font-bold text-sm text-amber-300 transition-all text-center">
+                  ₹1,500
+                </button>
+                <button type="button" onclick="setCalculatorAmount(3000)" class="calc-preset-btn py-2.5 px-2 rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 font-bold text-sm text-slate-200 transition-all text-center">
+                  ₹3,000
+                </button>
+                <button type="button" onclick="setCalculatorAmount(5000)" class="calc-preset-btn py-2.5 px-2 rounded-xl border border-slate-600 bg-slate-700/50 hover:bg-slate-700 font-bold text-sm text-slate-200 transition-all text-center">
+                  ₹5,000
+                </button>
+              </div>
+            </div>
+
+            <!-- Range Slider -->
+            <div class="space-y-3 pt-2">
+              <div class="flex justify-between items-center text-sm font-semibold">
+                <span class="text-slate-400">Custom Slider:</span>
+                <span class="text-2xl font-black text-amber-400" id="calcAmountDisplay">₹1,500</span>
+              </div>
+              <input 
+                type="range" 
+                id="impactSlider" 
+                min="300" 
+                max="25000" 
+                step="100" 
+                value="1500" 
+                class="w-full cursor-pointer accent-amber-500"
+                aria-label="Impact donation calculator amount slider"
+              >
+              <div class="flex justify-between text-[11px] text-slate-500 font-semibold">
+                <span>₹300</span>
+                <span>₹5,000</span>
+                <span>₹10,000</span>
+                <span>₹25,000</span>
+              </div>
+            </div>
+
+            <!-- Tax benefit highlight -->
+            <div class="p-3.5 rounded-2xl bg-brand-950/60 border border-brand-500/30 flex items-center gap-3">
+              <div class="w-8 h-8 rounded-lg bg-brand-500/20 text-brand-400 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-receipt"></i>
+              </div>
+              <div class="text-xs">
+                <strong class="text-emerald-300 font-bold">50% Tax Deduction:</strong>
+                <span class="text-slate-300 ml-1">You save up to <span id="calcTaxSavings" class="text-white font-bold">₹450</span> under Section 80G of the Indian Income Tax Act.</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Dynamic Outcomes Card -->
+          <div class="lg:col-span-5">
+            <div class="rounded-2xl bg-slate-900 border border-slate-700 p-6 sm:p-7 shadow-xl space-y-5">
+              <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                <span class="text-xs uppercase font-bold text-slate-400 tracking-wider">Estimated Tangible Outcomes</span>
+                <span class="px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-semibold">
+                  Verified Impact
+                </span>
+              </div>
+
+              <!-- Output Items -->
+              <div class="space-y-4">
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-lg shrink-0 mt-0.5">
+                    <i class="fa-solid fa-utensils"></i>
+                  </div>
+                  <div>
+                    <div class="text-base font-bold text-white" id="calcMealsOutput">15 Wholesome Meals</div>
+                    <div class="text-xs text-slate-400">Nutritionally balanced hot lunch & boiled eggs</div>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 rounded-xl bg-brand-500/20 text-brand-400 flex items-center justify-center text-lg shrink-0 mt-0.5">
+                    <i class="fa-solid fa-book"></i>
+                  </div>
+                  <div>
+                    <div class="text-base font-bold text-white" id="calcBooksOutput">1 Month Complete School Supplies</div>
+                    <div class="text-xs text-slate-400">Stationery, notebooks & after-school tutor support</div>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg shrink-0 mt-0.5">
+                    <i class="fa-solid fa-seedling"></i>
+                  </div>
+                  <div>
+                    <div class="text-base font-bold text-white" id="calcTreesOutput">2 Native Trees Planted</div>
+                    <div class="text-xs text-slate-400">Includes 3 years geo-tagged maintenance</div>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center text-lg shrink-0 mt-0.5">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </div>
+                  <div>
+                    <div class="text-base font-bold text-white" id="calcWasteOutput">15 kg Ocean Plastic Intercepted</div>
+                    <div class="text-xs text-slate-400">Segregated and sent to certified recyclers</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Action CTA -->
+              <div class="pt-4 border-t border-slate-800">
+                <button 
+                  onclick="triggerCalculatedDonation()" 
+                  class="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-accent-500 via-warm-500 to-warm-600 text-white font-bold text-base shadow-lg glow-amber hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2"
+                >
+                  <i class="fa-solid fa-heart"></i>
+                  <span>Donate <span id="calcCtaAmount">₹1,500</span> Now</span>
+                </button>
+                <div class="text-center text-[11px] text-slate-400 mt-2 flex items-center justify-center gap-2">
+                  <i class="fa-solid fa-lock text-emerald-400"></i> Instant 80G Tax Exemption Receipt Generated
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- UPCOMING COMMUNITY DRIVES & VOLUNTEER SIGN-UP -->
+  <section id="drives" class="py-20 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div>
+          <span class="inline-block px-3 py-1 rounded-full bg-brand-100 text-brand-800 text-xs font-bold uppercase tracking-wider mb-2">
+            Get On The Ground
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slateDark-900 tracking-tight">
+            Upcoming Community Volunteer Drives
+          </h2>
+          <p class="text-slate-600 mt-2 text-base">
+            Roll up your sleeves! Join hundreds of passionate changemakers this weekend.
+          </p>
+        </div>
+
+        <button onclick="openVolunteerModal()" class="self-start md:self-auto px-5 py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-sm hover:shadow transition-all inline-flex items-center gap-2">
+          <i class="fa-solid fa-user-plus"></i>
+          <span>Register as General Volunteer</span>
+        </button>
+      </div>
+
+      <!-- Drives Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Drive 1 -->
+        <div class="rounded-3xl border border-slate-200 p-6 bg-slate-50 hover:bg-white hover:border-emerald-300 hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider">
+                Coastal Clean-up
+              </span>
+              <span class="text-xs font-semibold text-rose-600 bg-rose-50 px-2 py-0.5 rounded-md border border-rose-200">
+                <i class="fa-solid fa-clock text-rose-500 mr-1"></i> 14 Spots Left
+              </span>
+            </div>
+            <h3 class="text-xl font-bold text-slateDark-900 mb-2">Versova Beach Mega Clean-Up & Plastic Audit</h3>
+            <p class="text-slate-600 text-sm mb-4">
+              Join 150+ citizens to remove microplastics, segregated beach trash, and conduct a brand audit with safety gloves & refreshments provided.
+            </p>
+            <div class="space-y-2 text-xs text-slate-600 font-medium mb-6">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-calendar text-brand-600 w-4"></i> Saturday, 28th Oct • 7:00 AM - 10:00 AM
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-location-dot text-brand-600 w-4"></i> Versova Beach, Mumbai (Gate 3)
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-shirt text-brand-600 w-4"></i> Free NGO Volunteer T-shirt & Gloves
+              </div>
+            </div>
+          </div>
+          <button onclick="openVolunteerModalForDrive('Versova Beach Mega Clean-Up', 'Clean-Up Ground Crew')" class="w-full py-2.5 px-4 rounded-xl bg-slateDark-900 hover:bg-brand-700 text-white font-semibold text-xs sm:text-sm text-center transition-colors">
+            Register for This Drive
+          </button>
+        </div>
+
+        <!-- Drive 2 -->
+        <div class="rounded-3xl border border-slate-200 p-6 bg-slate-50 hover:bg-white hover:border-amber-300 hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase tracking-wider">
+                Food Relief Drive
+              </span>
+              <span class="text-xs font-semibold text-rose-600 bg-rose-50 px-2 py-0.5 rounded-md border border-rose-200">
+                <i class="fa-solid fa-clock text-rose-500 mr-1"></i> 8 Spots Left
+              </span>
+            </div>
+            <h3 class="text-xl font-bold text-slateDark-900 mb-2">Govandi Slum Ration & Nutrition Kit Drive</h3>
+            <p class="text-slate-600 text-sm mb-4">
+              Assisting our ground team in packing and distributing 800 monthly ration kits, lentils, cooking oil, and nutritious baby food to families.
+            </p>
+            <div class="space-y-2 text-xs text-slate-600 font-medium mb-6">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-calendar text-amber-600 w-4"></i> Sunday, 29th Oct • 9:30 AM - 1:30 PM
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-location-dot text-amber-600 w-4"></i> Govandi Transit Camp Community Hall
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-certificate text-amber-600 w-4"></i> Certificate of Community Service
+              </div>
+            </div>
+          </div>
+          <button onclick="openVolunteerModalForDrive('Govandi Slum Ration Drive', 'Field Volunteer (Food Relief)')" class="w-full py-2.5 px-4 rounded-xl bg-slateDark-900 hover:bg-amber-600 text-white font-semibold text-xs sm:text-sm text-center transition-colors">
+            Register for This Drive
+          </button>
+        </div>
+
+        <!-- Drive 3 -->
+        <div class="rounded-3xl border border-slate-200 p-6 bg-slate-50 hover:bg-white hover:border-brand-300 hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full bg-brand-100 text-brand-800 text-xs font-bold uppercase tracking-wider">
+                Education Mentorship
+              </span>
+              <span class="text-xs font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200">
+                <i class="fa-solid fa-circle-check text-emerald-500 mr-1"></i> 18 Spots Left
+              </span>
+            </div>
+            <h3 class="text-xl font-bold text-slateDark-900 mb-2">Weekend Digital Coding & Math Hub</h3>
+            <p class="text-slate-600 text-sm mb-4">
+              Mentor young slum students in basic computer skills, Scratch visual coding, and experiential mathematics at our community center.
+            </p>
+            <div class="space-y-2 text-xs text-slate-600 font-medium mb-6">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-calendar text-brand-600 w-4"></i> Saturday, 4th Nov • 2:00 PM - 5:30 PM
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-location-dot text-brand-600 w-4"></i> Chembur Learning Lab, Mumbai
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-laptop text-brand-600 w-4"></i> Bring a laptop if possible (optional)
+              </div>
+            </div>
+          </div>
+          <button onclick="openVolunteerModalForDrive('Weekend Digital Coding Hub', 'Education Tutor / Mentor')" class="w-full py-2.5 px-4 rounded-xl bg-slateDark-900 hover:bg-brand-700 text-white font-semibold text-xs sm:text-sm text-center transition-colors">
+            Register for This Drive
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TRANSPARENCY & FINANCIAL TRUST (80G, 12A, AUDITED REPORTS) -->
+  <section id="transparency" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block px-3 py-1 rounded-full bg-brand-100 text-brand-800 text-xs font-bold uppercase tracking-wider mb-3">
+          Radical Transparency
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slateDark-900 tracking-tight">
+          Where Does Your Donation Go?
+        </h2>
+        <p class="text-slate-600 mt-3 text-base">
+          We maintain gold-standard financial governance. 84 paise of every rupee directly funds on-ground beneficiary programs.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Fund Allocation Visual Breakdown -->
+        <div class="lg:col-span-7 bg-white p-8 rounded-3xl border border-slate-200 shadow-sm space-y-6">
+          <h3 class="text-xl font-bold text-slateDark-900">
+            FY 2023-24 Fund Utilization Breakdown
+          </h3>
+
+          <!-- Multi-Segmented Progress Bar -->
+          <div class="w-full h-6 rounded-2xl bg-slate-100 overflow-hidden flex shadow-inner">
+            <div class="bg-brand-600 h-full transition-all duration-700 relative group cursor-pointer" style="width: 84%" title="84% Direct Program Delivery">
+              <span class="sr-only">84% Programs</span>
+            </div>
+            <div class="bg-amber-500 h-full transition-all duration-700 relative group cursor-pointer" style="width: 10%" title="10% Field Logistics & Ground Fleet">
+              <span class="sr-only">10% Logistics</span>
+            </div>
+            <div class="bg-slate-500 h-full transition-all duration-700 relative group cursor-pointer" style="width: 6%" title="6% Governance, Audit & Admin">
+              <span class="sr-only">6% Admin</span>
+            </div>
+          </div>
+
+          <!-- Breakdown Legend & Cards -->
+          <div class="space-y-4 pt-2">
+            
+            <div class="flex items-center justify-between p-4 rounded-2xl bg-brand-50 border border-brand-100">
+              <div class="flex items-center gap-3">
+                <div class="w-4 h-4 rounded-full bg-brand-600 shrink-0"></div>
+                <div>
+                  <div class="text-sm font-bold text-brand-950">Direct Program Delivery</div>
+                  <div class="text-xs text-brand-700">School kits, hot food ingredients, saplings, clean-up tools</div>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="text-lg font-black text-brand-700">84%</span>
+                <span class="block text-[11px] text-slate-500 font-medium">₹3.82 Cr</span>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between p-4 rounded-2xl bg-amber-50 border border-amber-100">
+              <div class="flex items-center gap-3">
+                <div class="w-4 h-4 rounded-full bg-amber-500 shrink-0"></div>
+                <div>
+                  <div class="text-sm font-bold text-amber-950">Ground Logistics & Food Vans</div>
+                  <div class="text-xs text-amber-700">Fuel, cold chain preservation, waste transport to recycling plants</div>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="text-lg font-black text-amber-700">10%</span>
+                <span class="block text-[11px] text-slate-500 font-medium">₹45.5 Lakhs</span>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between p-4 rounded-2xl bg-slate-100 border border-slate-200">
+              <div class="flex items-center gap-3">
+                <div class="w-4 h-4 rounded-full bg-slate-500 shrink-0"></div>
+                <div>
+                  <div class="text-sm font-bold text-slate-900">Governance, Audits & Tech</div>
+                  <div class="text-xs text-slate-600">Statutory audits, 80G tax processing, donor reporting portal</div>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="text-lg font-black text-slate-700">6%</span>
+                <span class="block text-[11px] text-slate-500 font-medium">₹27.3 Lakhs</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Download Audited Report Action -->
+          <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <span class="text-xs text-slate-500 font-medium">
+              <i class="fa-solid fa-file-shield text-brand-600 mr-1.5"></i> Audited by Deloitte Affiliated Chartered Accountants
+            </span>
+            <button onclick="openAuditedReportModal()" class="w-full sm:w-auto px-4 py-2.5 rounded-xl border border-slate-300 hover:bg-slate-100 font-bold text-xs sm:text-sm text-slate-700 inline-flex items-center justify-center gap-2 transition-colors">
+              <i class="fa-solid fa-file-pdf text-rose-500"></i>
+              <span>View FY24 Audited Report (PDF)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Trust Badges & Statutory Compliance Grid -->
+        <div class="lg:col-span-5 space-y-4">
+          
+          <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center text-xl shrink-0">
+              <i class="fa-solid fa-landmark"></i>
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <h4 class="text-base font-bold text-slateDark-900">Section 80G Tax Exemption</h4>
+                <span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 text-[10px] font-bold">Active</span>
+              </div>
+              <p class="text-xs text-slate-600 mt-1">
+                Indian tax residents can claim 50% deduction of donation amount under Section 80G of the Income Tax Act. Order: ITBA/EXM/80G/2021-22/1039841.
+              </p>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl shrink-0">
+              <i class="fa-solid fa-stamp"></i>
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <h4 class="text-base font-bold text-slateDark-900">Section 12A Registration</h4>
+                <span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 text-[10px] font-bold">Active</span>
+              </div>
+              <p class="text-xs text-slate-600 mt-1">
+                Registered non-profit entity with Income Tax Department of India. Registration Unique ID: AAATG1234FE20214.
+              </p>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl shrink-0">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <h4 class="text-base font-bold text-slateDark-900">CSR-1 Certified by MCA</h4>
+                <span class="px-2 py-0.5 rounded bg-blue-100 text-blue-800 text-[10px] font-bold">Compliant</span>
+              </div>
+              <p class="text-xs text-slate-600 mt-1">
+                Eligible for Corporate Social Responsibility (CSR) funding under Section 135 of the Companies Act 2013. MCA Reg: CSR00039218.
+              </p>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl shrink-0">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <h4 class="text-base font-bold text-slateDark-900">NITI Aayog NGO Darpan</h4>
+                <span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 text-[10px] font-bold">Verified</span>
+              </div>
+              <p class="text-xs text-slate-600 mt-1">
+                Formally enrolled and vetted on Government of India's NITI Aayog NGO portal. Darpan ID: MH/2021/0284729.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COMMUNITY VOICE & TESTIMONIALS -->
+  <section id="testimonials" class="py-20 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block px-3 py-1 rounded-full bg-brand-100 text-brand-800 text-xs font-bold uppercase tracking-wider mb-3">
+          Voices of Hope
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slateDark-900 tracking-tight">
+          Stories from the Ground
+        </h2>
+        <p class="text-slate-600 mt-3 text-base">
+          From mothers and children in learning hubs to dedicated weekend volunteers and CSR partners.
+        </p>
+      </div>
+
+      <!-- Testimonials Grid -->
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- Story 1: Beneficiary Parent -->
+        <div class="rounded-3xl bg-slate-50 border border-slate-200 p-8 flex flex-col justify-between hover:shadow-lg transition-all">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 text-sm mb-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed italic mb-6">
+              "Before Green Leaders started the evening study center, my 9-year-old Aarav struggled to read simple sentences. Today he solves fractions on the tablet and never misses a day because of the nutritious egg and dal meal they serve."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-200/60">
+            <img class="w-11 h-11 rounded-full object-cover ring-2 ring-brand-500" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&q=80" alt="Sunita Devi">
+            <div>
+              <div class="text-sm font-bold text-slateDark-900">Sunita Devi</div>
+              <div class="text-xs text-slate-500">Mother of Aarav • Chembur Slum Hub</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 2: Volunteer -->
+        <div class="rounded-3xl bg-slate-50 border border-slate-200 p-8 flex flex-col justify-between hover:shadow-lg transition-all">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 text-sm mb-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed italic mb-6">
+              "I work a high-stress corporate job during weekdays. Spending my Saturday mornings cleaning Versova beach with Green Leaders restored my mental clarity and connected me with an incredible, compassionate community."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-200/60">
+            <img class="w-11 h-11 rounded-full object-cover ring-2 ring-emerald-500" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=120&q=80" alt="Rohan Sharma">
+            <div>
+              <div class="text-sm font-bold text-slateDark-900">Rohan Sharma</div>
+              <div class="text-xs text-slate-500">Volunteer Lead (2+ Years) • Software Architect</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 3: Corporate CSR Lead -->
+        <div class="rounded-3xl bg-slate-50 border border-slate-200 p-8 flex flex-col justify-between hover:shadow-lg transition-all">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 text-sm mb-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed italic mb-6">
+              "Their reporting rigor and audited milestone tracking are unmatched. When our CSR committee sponsored the 25,000 tree Miyawaki project, every sapling was GPS-tagged and survival verified with zero bureaucracy."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-200/60">
+            <img class="w-11 h-11 rounded-full object-cover ring-2 ring-blue-500" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&q=80" alt="Priya Nambiar">
+            <div>
+              <div class="text-sm font-bold text-slateDark-900">Priya Nambiar</div>
+              <div class="text-xs text-slate-500">VP CSR • Nexus Global Technologies</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FREQUENTLY ASKED QUESTIONS (ACCORDION) -->
+  <section class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12">
+        <span class="inline-block px-3 py-1 rounded-full bg-brand-100 text-brand-800 text-xs font-bold uppercase tracking-wider mb-2">
+          Got Questions?
+        </span>
+        <h2 class="text-3xl font-extrabold text-slateDark-900 tracking-tight">
+          Frequently Asked Questions
+        </h2>
+      </div>
+
+      <div class="space-y-4" id="faqAccordion">
+        
+        <!-- FAQ 1 -->
+        <div class="rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-sm">
+          <button class="faq-toggle-btn w-full p-5 text-left flex justify-between items-center text-base font-bold text-slateDark-900 hover:text-brand-700 focus:outline-none transition-colors" onclick="toggleFaq(this)">
+            <span>How do I receive my 80G Tax Exemption Certificate?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            Immediately upon successful donation, an official digital receipt containing our 80G Unique Registration Number, your PAN, and transaction details will be generated. It will also be instantly sent to your registered email address and filed with the Income Tax Department's Form 10BD for seamless autofill in your annual ITR.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-sm">
+          <button class="faq-toggle-btn w-full p-5 text-left flex justify-between items-center text-base font-bold text-slateDark-900 hover:text-brand-700 focus:outline-none transition-colors" onclick="toggleFaq(this)">
+            <span>Can I volunteer if I only have a few hours on weekends?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            Yes! Over 80% of our volunteers are working professionals and students who volunteer 2-3 hours on Saturday or Sunday mornings for beach cleanups, food distribution, or teaching. There is no rigid minimum contract.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-sm">
+          <button class="faq-toggle-btn w-full p-5 text-left flex justify-between items-center text-base font-bold text-slateDark-900 hover:text-brand-700 focus:outline-none transition-colors" onclick="toggleFaq(this)">
+            <span>How does Green Leaders Foundation ensure transparency?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            We publish our statutory audited balance sheets, utilization certificates, and project progress metrics publicly every quarter. 84% of all expenses go directly to ground programs, with only 6% for governance and statutory compliance.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-sm">
+          <button class="faq-toggle-btn w-full p-5 text-left flex justify-between items-center text-base font-bold text-slateDark-900 hover:text-brand-700 focus:outline-none transition-colors" onclick="toggleFaq(this)">
+            <span>How does the Surplus Food Rescue drive operate?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            Our temperature-monitored mobile vans rescue untouched, high-grade surplus meals from verified wedding banquets, hotel kitchens, and corporate dining halls. The food undergoes rapid sensory and temperature quality checks before being distributed within 90 minutes to nocturnal slum transit hubs.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT & COMMUNITY HUBS -->
+  <section id="contact" class="py-20 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid lg:grid-cols-12 gap-12">
+        
+        <!-- Contact Information -->
+        <div class="lg:col-span-5 space-y-6">
+          <span class="inline-block px-3 py-1 rounded-full bg-brand-100 text-brand-800 text-xs font-bold uppercase tracking-wider">
+            Connect With Us
+          </span>
+          <h2 class="text-3xl font-extrabold text-slateDark-900 tracking-tight">
+            We’d Love to Hear From You
+          </h2>
+          <p class="text-slate-600 text-base leading-relaxed">
+            Whether you want to partner for corporate CSR, donate supplies, report surplus food, or invite our team for a school environmental workshop.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-base shrink-0">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="text-sm">
+                <div class="font-bold text-slateDark-900">Registered Headquarters</div>
+                <div class="text-slate-600">Green Leaders Foundation, 402 Harmony Tower, Link Road, Andheri West, Mumbai, MH 400053</div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-base shrink-0">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="text-sm">
+                <div class="font-bold text-slateDark-900">Direct Helpline & WhatsApp</div>
+                <div class="text-slate-600">+91 98200 12345 / +91 22 2680 9900</div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-base shrink-0">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="text-sm">
+                <div class="font-bold text-slateDark-900">Official Correspondence</div>
+                <div class="text-slate-600">contact@greenleaders.org • csr@greenleaders.org</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-xs text-slate-500">
+            <strong>Operating Hubs:</strong> Mumbai (HQ), Pune, Bengaluru, New Delhi, Hyderabad, Chennai.
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="lg:col-span-7">
+          <div class="rounded-3xl bg-slate-50 border border-slate-200 p-8 shadow-sm">
+            <h3 class="text-xl font-bold text-slateDark-900 mb-2">Send an Inquiry or Partnership Note</h3>
+            <p class="text-xs text-slate-500 mb-6">Our community coordinator will respond within 24 hours.</p>
+
+            <form id="contactForm" onsubmit="handleContactSubmit(event)" class="space-y-4">
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="contactName" class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Your Full Name *</label>
+                  <input type="text" id="contactName" required placeholder="e.g. Ananya Sen" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition">
+                </div>
+                <div>
+                  <label for="contactEmail" class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Email Address *</label>
+                  <input type="email" id="contactEmail" required placeholder="ananya@example.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition">
+                </div>
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="contactPhone" class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Phone Number</label>
+                  <input type="tel" id="contactPhone" placeholder="+91 98765 43210" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition">
+                </div>
+                <div>
+                  <label for="contactTopic" class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Inquiry Topic</label>
+                  <select id="contactTopic" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition">
+                    <option value="volunteer">Volunteer Sign-up Inquiry</option>
+                    <option value="csr">Corporate CSR Partnership</option>
+                    <option value="food">Report Surplus Food for Rescue</option>
+                    <option value="tax">80G Tax Exemption Receipt Query</option>
+                    <option value="other">General Feedback / Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="contactMessage" class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Your Message *</label>
+                <textarea id="contactMessage" rows="4" required placeholder="How would you like to collaborate or get involved?" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-3.5 px-6 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-md transition-colors flex items-center justify-center gap-2">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Submit Message</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slateDark-950 text-white pt-16 pb-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
+        
+        <!-- Org Info -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-brand-500 flex items-center justify-center text-white text-lg shadow-md">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+            <div>
+              <span class="text-xl font-extrabold tracking-tight text-white">Green Leaders Foundation</span>
+              <span class="block text-[10px] uppercase font-bold tracking-widest text-accent-400">Registered Non-Profit NGO</span>
+            </div>
+          </div>
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-sm">
+            Empowering underprivileged children through transformative learning kits, eradicating hunger with wholesome daily hot meals, and mobilizing youth for environmental restoration across India.
+          </p>
+          <div class="flex items-center gap-3 text-slate-400 text-sm">
+            <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-lg bg-slate-900 hover:bg-brand-600 hover:text-white flex items-center justify-center transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter / X" class="w-9 h-9 rounded-lg bg-slate-900 hover:bg-brand-600 hover:text-white flex items-center justify-center transition-colors"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-lg bg-slate-900 hover:bg-brand-600 hover:text-white flex items-center justify-center transition-colors"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn" class="w-9 h-9 rounded-lg bg-slate-900 hover:bg-brand-600 hover:text-white flex items-center justify-center transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube" class="w-9 h-9 rounded-lg bg-slate-900 hover:bg-brand-600 hover:text-white flex items-center justify-center transition-colors"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Links: Quick Nav -->
+        <div class="space-y-3">
+          <h4 class="text-xs uppercase font-bold text-slate-300 tracking-wider">Quick Navigation</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="#about" class="hover:text-brand-400 transition-colors">About Our Journey</a></li>
+            <li><a href="#pillars" class="hover:text-brand-400 transition-colors">Three Core Pillars</a></li>
+            <li><a href="#initiatives" class="hover:text-brand-400 transition-colors">Active Campaigns</a></li>
+            <li><a href="#impact" class="hover:text-brand-400 transition-colors">Impact Calculator</a></li>
+            <li><a href="#drives" class="hover:text-brand-400 transition-colors">Upcoming Volunteer Drives</a></li>
+            <li><a href="#transparency" class="hover:text-brand-400 transition-colors">Audited Financials</a></li>
+          </ul>
+        </div>
+
+        <!-- Links: Pillars & Programs -->
+        <div class="space-y-3">
+          <h4 class="text-xs uppercase font-bold text-slate-300 tracking-wider">Pillars & Impact</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="#initiatives" class="hover:text-brand-400 transition-colors">Project Vidya (Digital Labs)</a></li>
+            <li><a href="#initiatives" class="hover:text-brand-400 transition-colors">Annapurna Slum Kitchens</a></li>
+            <li><a href="#initiatives" class="hover:text-brand-400 transition-colors">Mission Clean Coast</a></li>
+            <li><a href="#initiatives" class="hover:text-brand-400 transition-colors">Miyawaki Urban Afforestation</a></li>
+            <li><a href="#initiatives" class="hover:text-brand-400 transition-colors">Surplus Food Rescue Fleet</a></li>
+            <li><a href="#initiatives" class="hover:text-brand-400 transition-colors">Shiksha Sahay Girls Mentorship</a></li>
+          </ul>
+        </div>
+
+        <!-- Statutory & Newsletter -->
+        <div class="space-y-3">
+          <h4 class="text-xs uppercase font-bold text-slate-300 tracking-wider">Impact Newsletter</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Get our monthly transparent field impact reports directly to your inbox.
+          </p>
+          <form onsubmit="handleNewsletterSubmit(event)" class="space-y-2">
+            <input type="email" id="newsletterEmail" required placeholder="Enter your email" class="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-xs text-white placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-brand-500">
+            <button type="submit" class="w-full py-2 px-3 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs transition-colors">
+              Subscribe Free
+            </button>
+          </form>
+          <div class="text-[11px] text-slate-500">
+            <i class="fa-solid fa-lock text-emerald-400 mr-1"></i> No spam. Unsubscribe anytime.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Legal Compliance Footnote -->
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div>
+          © 2026 Green Leaders Foundation. Registered under Indian Societies Registration Act XXI of 1860.
+          <span class="block mt-0.5">Section 80G Order: ITBA/EXM/80G/2021-22/1039841 • MCA CSR-1 Reg: CSR00039218.</span>
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-slate-400">Privacy Policy</a>
+          <a href="#" class="hover:text-slate-400">Terms of Service</a>
+          <a href="#" class="hover:text-slate-400">Refund Policy</a>
+          <a href="#transparency" class="hover:text-slate-400">80G Status</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING QUICK ACTION PILL & BACK TO TOP -->
+  <div class="fixed bottom-6 right-6 z-40 flex items-center gap-3">
+    <button 
+      onclick="openDonationModal()" 
+      class="px-5 py-3 rounded-full bg-gradient-to-r from-accent-500 via-warm-500 to-warm-600 text-white font-extrabold text-sm shadow-xl glow-amber hover:shadow-2xl hover:scale-105 active:scale-95 transition-all flex items-center gap-2"
+      aria-label="Open donation modal"
+    >
+      <i class="fa-solid fa-heart animate-pulse"></i>
+      <span class="hidden sm:inline">Donate & Save Tax</span>
+      <span class="sm:hidden">Donate</span>
+    </button>
+    <button 
+      onclick="window.scrollTo({top: 0, behavior: 'smooth'})" 
+      id="backToTopBtn" 
+      class="w-11 h-11 rounded-full bg-slateDark-900/90 text-white hover:bg-brand-600 backdrop-blur-md shadow-lg flex items-center justify-center transition-all opacity-80 hover:opacity-100" 
+      aria-label="Scroll back to top"
+    >
+      <i class="fa-solid fa-arrow-up text-sm"></i>
+    </button>
+  </div>
+
+  <!-- ============================================================== -->
+  <!-- MODAL 1: INTERACTIVE COMPREHENSIVE DONATION MODAL -->
+  <!-- ============================================================== -->
+  <div id="donationModal" class="fixed inset-0 z-50 hidden overflow-y-auto bg-slateDark-950/70 backdrop-blur-sm flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="donationModalTitle">
+    <div class="relative w-full max-w-xl rounded-3xl bg-white shadow-2xl overflow-hidden border border-slate-200 transform transition-all my-8 animate-fadeIn">
+      
+      <!-- Modal Header -->
+      <div class="bg-gradient-to-r from-slateDark-900 to-brand-950 text-white p-6 relative">
+        <button onclick="closeDonationModal()" aria-label="Close Donation Modal" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center text-sm transition">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-brand-500/20 text-brand-300 border border-brand-500/30 text-xs font-semibold mb-2">
+          <i class="fa-solid fa-shield-halved"></i> 80G Tax-Exempt Contribution
+        </div>
+        <h3 id="donationModalTitle" class="text-2xl font-black text-white">Make a Life-Changing Gift</h3>
+        <p class="text-xs text-slate-300 mt-1" id="donationTargetCauseText">Allocated to: General Relief & High Priority Drives</p>
+      </div>
+
+      <!-- Frequency Toggle (One-time vs Monthly) -->
+      <div class="p-6 pb-2">
+        <div class="grid grid-cols-2 p-1 rounded-2xl bg-slate-100 border border-slate-200 text-center font-bold text-xs sm:text-sm">
+          <button type="button" id="freqOneTimeBtn" onclick="setDonationFrequency('one-time')" class="py-2.5 rounded-xl bg-white text-slateDark-900 shadow-sm transition-all">
+            One-Time Gift
+          </button>
+          <button type="button" id="freqMonthlyBtn" onclick="setDonationFrequency('monthly')" class="py-2.5 rounded-xl text-slate-600 hover:text-slateDark-900 transition-all flex items-center justify-center gap-1.5">
+            <span>Monthly Impact Guardian</span>
+            <span class="px-1.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[10px]">2x Impact</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal Body Form -->
+      <form id="donationForm" onsubmit="processDonation(event)" class="p-6 pt-2 space-y-5">
+        
+        <!-- Preset Tier Chips -->
+        <div class="space-y-2">
+          <label class="block text-xs font-bold uppercase text-slate-600 tracking-wider">Select Donation Amount (INR):</label>
+          <div class="grid grid-cols-4 gap-2" id="modalPresetChips">
+            <button type="button" onclick="setModalAmount(500)" class="modal-amt-chip py-2.5 rounded-xl border border-slate-300 font-bold text-sm text-slate-700 hover:border-brand-500 transition-all">₹500</button>
+            <button type="button" onclick="setModalAmount(1000)" class="modal-amt-chip py-2.5 rounded-xl border border-slate-300 font-bold text-sm text-slate-700 hover:border-brand-500 transition-all">₹1,000</button>
+            <button type="button" onclick="setModalAmount(2500)" class="modal-amt-chip active py-2.5 rounded-xl border-2 border-amber-500 bg-amber-50 font-bold text-sm text-amber-700 transition-all">₹2,500</button>
+            <button type="button" onclick="setModalAmount(5000)" class="modal-amt-chip py-2.5 rounded-xl border border-slate-300 font-bold text-sm text-slate-700 hover:border-brand-500 transition-all">₹5,000</button>
+          </div>
+        </div>
+
+        <!-- Custom Amount Input -->
+        <div class="relative">
+          <span class="absolute inset-y-0 left-0 pl-4 flex items-center text-slate-500 font-bold text-base">₹</span>
+          <input 
+            type="number" 
+            id="modalCustomAmount" 
+            min="100" 
+            step="50" 
+            value="2500" 
+            oninput="handleCustomModalAmount(this.value)" 
+            class="w-full pl-9 pr-4 py-3 rounded-xl border border-slate-300 text-slateDark-900 font-bold text-lg focus:outline-none focus:ring-2 focus:ring-amber-500"
+            placeholder="Other amount"
+          >
+          <div class="mt-1 flex items-center justify-between text-[11px] text-slate-500">
+            <span id="modalImpactHintText">Provides: 25 hot meals + 1 month schooling kit</span>
+            <span class="text-brand-600 font-semibold">Min: ₹100</span>
+          </div>
+        </div>
+
+        <!-- Donor Personal Details -->
+        <div class="space-y-3 pt-1">
+          <label class="block text-xs font-bold uppercase text-slate-600 tracking-wider">Donor Details (for 80G Certificate):</label>
+          <div class="grid sm:grid-cols-2 gap-3">
+            <input type="text" id="donorName" required placeholder="Full Name *" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+            <input type="email" id="donorEmail" required placeholder="Email Address *" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+          </div>
+          <div class="grid sm:grid-cols-2 gap-3">
+            <input type="tel" id="donorPhone" required placeholder="Mobile Number (for receipt) *" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+            <input type="text" id="donorPan" placeholder="PAN Card (e.g. ABCDE1234F)" maxlength="10" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm uppercase focus:outline-none focus:ring-2 focus:ring-brand-500">
+          </div>
+          <div class="text-[11px] text-slate-500 flex items-center gap-1.5">
+            <i class="fa-solid fa-circle-info text-brand-600"></i> PAN is mandatory to claim Section 80G tax benefit on ITR.
+          </div>
+        </div>
+
+        <!-- Realistic Mock Payment Methods Selector -->
+        <div class="space-y-3 pt-2">
+          <label class="block text-xs font-bold uppercase text-slate-600 tracking-wider">Select Payment Method:</label>
+          <div class="grid grid-cols-3 gap-2" id="payMethodTabs">
+            <button type="button" onclick="selectPayMethod('upi')" class="pay-method-btn active py-2.5 px-2 rounded-xl border-2 border-brand-600 bg-brand-50 text-brand-900 font-bold text-xs flex flex-col items-center gap-1">
+              <i class="fa-solid fa-qrcode text-base text-brand-600"></i>
+              <span>UPI / QR Code</span>
+            </button>
+            <button type="button" onclick="selectPayMethod('card')" class="pay-method-btn py-2.5 px-2 rounded-xl border border-slate-300 bg-white text-slate-700 font-semibold text-xs flex flex-col items-center gap-1 hover:border-slate-400">
+              <i class="fa-regular fa-credit-card text-base text-slate-600"></i>
+              <span>Credit / Debit</span>
+            </button>
+            <button type="button" onclick="selectPayMethod('netbanking')" class="pay-method-btn py-2.5 px-2 rounded-xl border border-slate-300 bg-white text-slate-700 font-semibold text-xs flex flex-col items-center gap-1 hover:border-slate-400">
+              <i class="fa-solid fa-building-columns text-base text-slate-600"></i>
+              <span>Net Banking</span>
+            </button>
+          </div>
+
+          <!-- Payment Container: UPI / QR -->
+          <div id="payContainerUpi" class="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-center space-y-3">
+            <div class="flex items-center justify-center gap-2 text-xs font-bold text-slate-700">
+              <span>Google Pay</span> • <span>PhonePe</span> • <span>Paytm</span> • <span>BHIM</span>
+            </div>
+            
+            <!-- Live Mock Dynamic QR Code -->
+            <div class="w-40 h-40 mx-auto bg-white p-2 rounded-2xl shadow-sm border border-slate-200 flex flex-col items-center justify-center relative">
+              <!-- SVG QR Code Representation -->
+              <svg class="w-32 h-32 text-slateDark-900" viewBox="0 0 100 100" fill="currentColor">
+                <!-- Outer borders & corners -->
+                <rect x="5" y="5" width="28" height="28" rx="4" fill="none" stroke="currentColor" stroke-width="4"/>
+                <rect x="11" y="11" width="16" height="16" fill="currentColor"/>
+                
+                <rect x="67" y="5" width="28" height="28" rx="4" fill="none" stroke="currentColor" stroke-width="4"/>
+                <rect x="73" y="11" width="16" height="16" fill="currentColor"/>
+                
+                <rect x="5" y="67" width="28" height="28" rx="4" fill="none" stroke="currentColor" stroke-width="4"/>
+                <rect x="11" y="73" width="16" height="16" fill="currentColor"/>
+                
+                <!-- Center patterns -->
+                <rect x="42" y="10" width="8" height="8"/>
+                <rect x="52" y="20" width="6" height="12"/>
+                <rect x="40" y="40" width="20" height="20" rx="3" fill="#059669"/>
+                <rect x="68" y="45" width="10" height="10"/>
+                <rect x="45" y="72" width="14" height="6"/>
+                <rect x="70" y="70" width="12" height="12"/>
+                <rect x="85" y="85" width="8" height="8"/>
+                <circle cx="50" cy="50" r="4" fill="white"/>
+              </svg>
+              <div class="absolute bottom-1 bg-white/95 px-2 py-0.5 rounded text-[9px] font-bold text-brand-700">
+                greenleaders@hdfcbank
+              </div>
+            </div>
+
+            <p class="text-xs text-slate-500">Scan via any UPI app or click simulated button below to complete mock donation.</p>
+          </div>
+
+          <!-- Payment Container: Card -->
+          <div id="payContainerCard" class="hidden p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+            <div class="space-y-1">
+              <label class="block text-[11px] font-bold uppercase text-slate-600">Card Number</label>
+              <div class="relative">
+                <input type="text" id="mockCardNumber" placeholder="4111 2222 3333 4444" maxlength="19" class="w-full pl-3 pr-10 py-2 rounded-xl border border-slate-300 text-sm font-mono bg-white">
+                <span class="absolute inset-y-0 right-0 pr-3 flex items-center text-slate-400">
+                  <i class="fa-brands fa-cc-visa text-lg text-blue-600"></i>
+                </span>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <label class="block text-[11px] font-bold uppercase text-slate-600">Expiry (MM/YY)</label>
+                <input type="text" placeholder="12/28" maxlength="5" class="w-full px-3 py-2 rounded-xl border border-slate-300 text-sm bg-white">
+              </div>
+              <div>
+                <label class="block text-[11px] font-bold uppercase text-slate-600">CVV</label>
+                <input type="password" placeholder="•••" maxlength="4" class="w-full px-3 py-2 rounded-xl border border-slate-300 text-sm bg-white">
+              </div>
+            </div>
+          </div>
+
+          <!-- Payment Container: Net Banking -->
+          <div id="payContainerNetbanking" class="hidden p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+            <label class="block text-[11px] font-bold uppercase text-slate-600">Popular Indian Banks:</label>
+            <div class="grid grid-cols-3 gap-2">
+              <label class="p-2 border border-slate-200 rounded-xl bg-white text-xs font-bold text-center cursor-pointer hover:border-brand-500 flex items-center justify-center gap-1">
+                <input type="radio" name="mockBank" value="HDFC" checked class="accent-brand-600"> HDFC
+              </label>
+              <label class="p-2 border border-slate-200 rounded-xl bg-white text-xs font-bold text-center cursor-pointer hover:border-brand-500 flex items-center justify-center gap-1">
+                <input type="radio" name="mockBank" value="SBI" class="accent-brand-600"> SBI
+              </label>
+              <label class="p-2 border border-slate-200 rounded-xl bg-white text-xs font-bold text-center cursor-pointer hover:border-brand-500 flex items-center justify-center gap-1">
+                <input type="radio" name="mockBank" value="ICICI" class="accent-brand-600"> ICICI
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Submit CTA -->
+        <button 
+          type="submit" 
+          id="modalSubmitBtn" 
+          class="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-accent-500 via-warm-500 to-warm-600 text-white font-extrabold text-base shadow-lg glow-amber hover:shadow-xl hover:scale-[1.01] active:scale-[0.98] transition-all flex items-center justify-center gap-2"
+        >
+          <i class="fa-solid fa-lock text-sm"></i>
+          <span>Complete Secure Donation of <strong id="modalSubmitAmountLabel">₹2,500</strong></span>
+        </button>
+
+        <div class="text-center text-[11px] text-slate-400 flex items-center justify-center gap-3">
+          <span><i class="fa-solid fa-shield-check text-brand-500"></i> 256-Bit Encrypted</span>
+          <span>•</span>
+          <span>PCI-DSS Level 1</span>
+          <span>•</span>
+          <span>RBI Compliant</span>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- ============================================================== -->
+  <!-- MODAL 2: 80G TAX DONATION RECEIPT & CONFIRMATION -->
+  <!-- ============================================================== -->
+  <div id="receiptModal" class="fixed inset-0 z-50 hidden overflow-y-auto bg-slateDark-950/75 backdrop-blur-sm flex items-center justify-center p-4" role="dialog" aria-modal="true">
+    <div class="relative w-full max-w-lg rounded-3xl bg-white shadow-2xl overflow-hidden border border-slate-200 transform transition-all my-8 animate-fadeIn">
+      
+      <!-- Receipt Header Badge -->
+      <div class="bg-gradient-to-r from-brand-700 to-emerald-800 text-white p-6 text-center relative">
+        <button onclick="closeReceiptModal()" aria-label="Close Receipt Modal" class="no-print absolute top-4 right-4 w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 text-white flex items-center justify-center text-sm transition">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="w-14 h-14 mx-auto rounded-full bg-white text-brand-700 flex items-center justify-center text-2xl shadow-md mb-3">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <h3 class="text-2xl font-black">Thank You For Your Kindness!</h3>
+        <p class="text-xs text-brand-100 mt-1">Donation Successful • Official 80G Tax Exemption Receipt</p>
+      </div>
+
+      <!-- Printable Receipt Body -->
+      <div class="p-6 space-y-4 text-xs sm:text-sm text-slate-700">
+        
+        <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+          <div>
+            <div class="font-extrabold text-slateDark-900 text-base">Green Leaders Foundation</div>
+            <div class="text-[11px] text-slate-500">Reg: #AAATG1234FE20214 • 80G Verified</div>
+          </div>
+          <div class="text-right">
+            <div class="text-[10px] text-slate-400 uppercase font-semibold">Receipt Number</div>
+            <div class="font-mono font-bold text-slateDark-900 text-xs" id="receiptTxnId">GLF-2026-98412</div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3 py-1">
+          <div>
+            <div class="text-[11px] text-slate-400 uppercase font-semibold">Donor Name</div>
+            <div class="font-bold text-slateDark-900" id="receiptDonorName">Rahul Verma</div>
+          </div>
+          <div>
+            <div class="text-[11px] text-slate-400 uppercase font-semibold">Date & Time</div>
+            <div class="font-medium text-slateDark-900" id="receiptDate">23 Oct 2026, 04:50 PM</div>
+          </div>
+          <div>
+            <div class="text-[11px] text-slate-400 uppercase font-semibold">Donor PAN</div>
+            <div class="font-mono font-bold text-slateDark-900" id="receiptPan">ABCDE1234F</div>
+          </div>
+          <div>
+            <div class="text-[11px] text-slate-400 uppercase font-semibold">Payment Mode</div>
+            <div class="font-medium text-slateDark-900" id="receiptPayMode">UPI Instant Transfer</div>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-amber-50/70 border border-amber-200 flex items-center justify-between">
+          <div>
+            <div class="text-xs uppercase font-bold text-amber-800">Total Donated Amount</div>
+            <div class="text-2xl font-black text-amber-700" id="receiptAmount">₹2,500</div>
+          </div>
+          <div class="text-right">
+            <span class="inline-block px-2 py-1 rounded bg-brand-100 text-brand-800 font-bold text-xs">
+              50% 80G Tax Deductible
+            </span>
+            <div class="text-[11px] text-slate-500 mt-1">IT Act Section 80G</div>
+          </div>
+        </div>
+
+        <div class="text-[11px] text-slate-500 leading-relaxed bg-slate-50 p-3 rounded-xl border border-slate-200">
+          This receipt is computer-generated and qualifies for tax exemption under section 80G of the Income Tax Act, 1961. Green Leaders Foundation certifies that funds will be utilized exclusively for charitable objectives.
+        </div>
+
+        <!-- Receipt Action Buttons -->
+        <div class="no-print pt-3 flex flex-col sm:flex-row items-center gap-3">
+          <button onclick="window.print()" class="w-full sm:flex-1 py-3 px-4 rounded-xl bg-slateDark-900 hover:bg-slateDark-800 text-white font-bold text-xs sm:text-sm text-center transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-print"></i>
+            <span>Print / Save PDF</span>
+          </button>
+          <button onclick="shareDonationAchievement()" class="w-full sm:flex-1 py-3 px-4 rounded-xl border border-slate-300 hover:bg-slate-50 text-slate-700 font-bold text-xs sm:text-sm text-center transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-share-nodes text-brand-600"></i>
+            <span>Share Impact</span>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================================== -->
+  <!-- MODAL 3: VOLUNTEER REGISTRATION MODAL -->
+  <!-- ============================================================== -->
+  <div id="volunteerModal" class="fixed inset-0 z-50 hidden overflow-y-auto bg-slateDark-950/70 backdrop-blur-sm flex items-center justify-center p-4" role="dialog" aria-modal="true">
+    <div class="relative w-full max-w-lg rounded-3xl bg-white shadow-2xl overflow-hidden border border-slate-200 transform transition-all my-8 animate-fadeIn">
+      
+      <div class="bg-gradient-to-r from-brand-800 to-slateDark-900 text-white p-6 relative">
+        <button onclick="closeVolunteerModal()" aria-label="Close Volunteer Modal" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center text-sm transition">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <span class="inline-block px-2.5 py-1 rounded-full bg-brand-500/20 text-brand-300 text-xs font-semibold mb-2">
+          Join 3,400+ Changemakers
+        </span>
+        <h3 class="text-2xl font-black">Volunteer With Green Leaders</h3>
+        <p class="text-xs text-slate-300 mt-1">Lead on-ground drives or teach young children on weekends.</p>
+      </div>
+
+      <form id="volunteerForm" onsubmit="handleVolunteerSubmit(event)" class="p-6 space-y-4">
+        
+        <div>
+          <label for="volDriveName" class="block text-xs font-bold uppercase text-slate-600 tracking-wider mb-1">Assigned Drive / Program</label>
+          <input type="text" id="volDriveName" readonly value="General Volunteer Pool" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-100 border border-slate-300 text-sm font-semibold text-slate-800 cursor-not-allowed">
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-3">
+          <div>
+            <label for="volFullName" class="block text-xs font-bold uppercase text-slate-600 tracking-wider mb-1">Full Name *</label>
+            <input type="text" id="volFullName" required placeholder="e.g. Siddharth Joshi" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+          </div>
+          <div>
+            <label for="volPhone" class="block text-xs font-bold uppercase text-slate-600 tracking-wider mb-1">Mobile (WhatsApp) *</label>
+            <input type="tel" id="volPhone" required placeholder="+91 98765 43210" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+          </div>
+        </div>
+
+        <div>
+          <label for="volEmail" class="block text-xs font-bold uppercase text-slate-600 tracking-wider mb-1">Email Address *</label>
+          <input type="email" id="volEmail" required placeholder="siddharth@example.com" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-3">
+          <div>
+            <label for="volRole" class="block text-xs font-bold uppercase text-slate-600 tracking-wider mb-1">Preferred Role *</label>
+            <select id="volRole" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 bg-white">
+              <option value="Clean-Up Ground Crew">Clean-Up Ground Crew</option>
+              <option value="Education Tutor / Mentor">Education Tutor / Mentor</option>
+              <option value="Field Volunteer (Food Relief)">Field Volunteer (Food Relief)</option>
+              <option value="Logistics Coordinator">Logistics & Supply Coordinator</option>
+              <option value="Social Media & Photography">Media & Photography</option>
+            </select>
+          </div>
+          <div>
+            <label for="volCity" class="block text-xs font-bold uppercase text-slate-600 tracking-wider mb-1">Your City *</label>
+            <select id="volCity" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 bg-white">
+              <option value="Mumbai">Mumbai</option>
+              <option value="Pune">Pune</option>
+              <option value="Bengaluru">Bengaluru</option>
+              <option value="Delhi NCR">Delhi NCR</option>
+              <option value="Hyderabad">Hyderabad</option>
+              <option value="Other">Other City</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label for="volAvailability" class="block text-xs font-bold uppercase text-slate-600 tracking-wider mb-1">Availability</label>
+          <div class="grid grid-cols-3 gap-2">
+            <label class="p-2 border border-slate-200 rounded-xl bg-slate-50 text-xs font-semibold text-center cursor-pointer hover:bg-white">
+              <input type="radio" name="availability" value="Saturday Mornings" checked class="accent-brand-600"> Sat AM
+            </label>
+            <label class="p-2 border border-slate-200 rounded-xl bg-slate-50 text-xs font-semibold text-center cursor-pointer hover:bg-white">
+              <input type="radio" name="availability" value="Sunday Mornings" class="accent-brand-600"> Sun AM
+            </label>
+            <label class="p-2 border border-slate-200 rounded-xl bg-slate-50 text-xs font-semibold text-center cursor-pointer hover:bg-white">
+              <input type="radio" name="availability" value="Flexible" class="accent-brand-600"> Flexible
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" class="w-full py-3.5 px-6 rounded-2xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-md transition-colors flex items-center justify-center gap-2">
+          <i class="fa-solid fa-check"></i>
+          <span>Confirm Volunteer Registration</span>
+        </button>
+
+        <p class="text-[11px] text-slate-400 text-center">
+          You will receive a WhatsApp confirmation link with venue details 2 days prior to the drive.
+        </p>
+
+      </form>
+
+    </div>
+  </div>
+
+  <!-- ============================================================== -->
+  <!-- MODAL 4: INITIATIVE DETAIL MODAL -->
+  <!-- ============================================================== -->
+  <div id="initiativeDetailModal" class="fixed inset-0 z-50 hidden overflow-y-auto bg-slateDark-950/70 backdrop-blur-sm flex items-center justify-center p-4" role="dialog" aria-modal="true">
+    <div class="relative w-full max-w-xl rounded-3xl bg-white shadow-2xl overflow-hidden border border-slate-200 transform transition-all my-8 animate-fadeIn">
+      
+      <div class="relative aspect-video">
+        <img id="initModalImg" src="" alt="Initiative image" class="w-full h-full object-cover">
+        <button onclick="closeInitiativeDetails()" aria-label="Close details" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slateDark-900/70 hover:bg-slateDark-900 text-white flex items-center justify-center text-sm transition">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <span id="initModalBadge" class="absolute bottom-4 left-4 px-3 py-1 rounded-full bg-brand-600 text-white text-xs font-bold uppercase tracking-wider">
+          Campaign
+        </span>
+      </div>
+
+      <div class="p-6 space-y-4">
+        <h3 id="initModalTitle" class="text-2xl font-black text-slateDark-900">Campaign Title</h3>
+        <p id="initModalDesc" class="text-sm text-slate-600 leading-relaxed">Detailed campaign description.</p>
+
+        <div class="grid grid-cols-2 gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200 text-xs">
+          <div>
+            <span class="text-slate-400 uppercase font-semibold block">Ground Location</span>
+            <span id="initModalLocation" class="font-bold text-slateDark-900">Mumbai</span>
+          </div>
+          <div>
+            <span class="text-slate-400 uppercase font-semibold block">Target Beneficiaries</span>
+            <span id="initModalTarget" class="font-bold text-slateDark-900">1,200 Children</span>
+          </div>
+        </div>
+
+        <div class="pt-2 flex items-center gap-3">
+          <button id="initModalDonateBtn" onclick="donateToCurrentInitiative()" class="flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-accent-500 to-warm-600 text-white font-bold text-sm text-center shadow-md">
+            Sponsor This Initiative
+          </button>
+          <button id="initModalVolunteerBtn" onclick="volunteerForCurrentInitiative()" class="flex-1 py-3 px-4 rounded-xl border border-brand-600 text-brand-700 hover:bg-brand-50 font-bold text-sm text-center">
+            RSVP as Volunteer
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================================== -->
+  <!-- MODAL 5: AUDITED REPORT VIEWER MODAL -->
+  <!-- ============================================================== -->
+  <div id="auditedReportModal" class="fixed inset-0 z-50 hidden overflow-y-auto bg-slateDark-950/70 backdrop-blur-sm flex items-center justify-center p-4" role="dialog" aria-modal="true">
+    <div class="relative w-full max-w-lg rounded-3xl bg-white shadow-2xl overflow-hidden border border-slate-200 transform transition-all my-8 animate-fadeIn">
+      
+      <div class="bg-slateDark-900 text-white p-6 relative">
+        <button onclick="closeAuditedReportModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center text-sm transition">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <span class="inline-block px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-semibold mb-2">
+          Statutory Disclosure
+        </span>
+        <h3 class="text-xl font-black">FY 2023-24 Audited Financial Statement</h3>
+        <p class="text-xs text-slate-400 mt-1">Audit conducted under ICAI standards by Independent Chartered Accountants.</p>
+      </div>
+
+      <div class="p-6 space-y-4 text-xs sm:text-sm text-slate-700">
+        <div class="space-y-2 border-b border-slate-200 pb-3">
+          <div class="flex justify-between font-semibold">
+            <span>Total Donations & Grants Received:</span>
+            <span class="font-bold text-slateDark-900">₹4,55,10,240</span>
+          </div>
+          <div class="flex justify-between font-semibold text-brand-700">
+            <span>Direct Charitable Expenditure (84%):</span>
+            <span class="font-bold">₹3,82,28,601</span>
+          </div>
+          <div class="flex justify-between text-slate-600">
+            <span>Logistics & Surplus Food Transport (10%):</span>
+            <span>₹45,51,024</span>
+          </div>
+          <div class="flex justify-between text-slate-600">
+            <span>Administrative & Governance (6%):</span>
+            <span>₹27,30,615</span>
+          </div>
+        </div>
+
+        <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-600">
+          <strong>Auditor's Unqualified Opinion:</strong> "In our opinion and to the best of our information, the financial statements give a true and fair view in conformity with the accounting principles generally accepted in India."
+        </div>
+
+        <div class="pt-2 flex items-center gap-3">
+          <button onclick="simulatePdfDownload()" class="flex-1 py-3 px-4 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs sm:text-sm text-center shadow-sm flex items-center justify-center gap-2">
+            <i class="fa-solid fa-download"></i>
+            <span>Download Full Report (PDF)</span>
+          </button>
+          <button onclick="closeAuditedReportModal()" class="py-3 px-4 rounded-xl border border-slate-300 hover:bg-slate-50 text-slate-700 font-bold text-xs sm:text-sm">
+            Close
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION SYSTEM -->
+  <div id="toastContainer" class="fixed top-6 right-6 z-50 flex flex-col gap-2 pointer-events-none" aria-live="polite"></div>
+
+  <!-- MAIN JAVASCRIPT APPLICATION -->
+  <script src="app.js"></script>
+</body>
+</html>
